@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
-<head>
+<head><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>    
 <meta charset="UTF-8">
 <title>calculator_redesign2</title>
-</head>
+
+
+
+
     
     <style>
+    
     
     .text{
     outline:0;
@@ -17,6 +22,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -31,6 +38,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -45,6 +54,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin: 10px;
     }
@@ -59,6 +70,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -73,6 +86,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -87,6 +102,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -101,6 +118,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -115,6 +134,8 @@
     height:80px;
     float:left;
     font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
     padding: 0%;
     margin:10px;
     }
@@ -129,6 +150,8 @@
     height:495px;
     float:left;
     font-size:40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
     padding-left: 5px;
     margin:1px;
     display:inline-block;
@@ -155,7 +178,6 @@
     
     </style>
 <title>Caluculator</title>
-</head>
 
 <body>
 <form name="calculator">
@@ -175,21 +197,21 @@
     <input type="button" class="text" value="AC" onClick="calculator.display.value =''">
     <input type="button" class="number" name="(" value="(" onclick="calculator.display.value+='('">
     <input type="button" class="number" name=")" value=")" onclick="calculator.display.value+=')'">
-    <input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">
+    <input type="button" class="number" name="divide" value="/" onclick="calculator.display.value+='/'">
         </div>
     
    <div class="inputRow">
     <input type="button" class="number" value="1" onclick="calculator.display.value+='1'">
     <input type="button" class="number" value="2" onclick="calculator.display.value+='2'">
     <input type="button" class="number" value="3" onclick="calculator.display.value+='3'">
-    <input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+    <input type="button" class="number" name="add" value="+" onclick="calculator.display.value+='+'">
         </div>
         
     <div class="inputRow">
     <input type="button" class="number" value="4" onclick="calculator.display.value+='4'">
     <input type="button" class="number" value="5" onclick="calculator.display.value+='5'">
     <input type="button" class="number" value="6" onclick="calculator.display.value+='6'">
-    <input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value+='-'">
+    <input type="button" class="number" name="subtract" value="-" onclick="calculator.display.value+='-'">
     
         </div>
         
@@ -197,7 +219,7 @@
     <input type="button" class="number" value="7" onclick="calculator.display.value+='7'">
     <input type="button" class="number" value="8" onclick="calculator.display.value+='8'">
     <input type="button" class="number" value="9" onclick="calculator.display.value+='9'">
-    <input type="button" class="operator" name="multiply" value="x" onclick="calculator.display.value+='*'">
+    <input type="button" class="number" name="multiply" value="x" onclick="calculator.display.value+='*'">
         </div>
         
     <div class="inputRow">
@@ -216,7 +238,6 @@
     
 
     </form>
-
 
 </body>
 </html>
