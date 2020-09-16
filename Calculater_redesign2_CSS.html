@@ -11,14 +11,14 @@
     outline:0;
     border: none;
     color: #868686;
-    background-color: none;
+    background-color: #FFFFFF;
     border-radius: 50px;
     width: 80px;
     height:80px;
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
     .text:hover{
@@ -32,21 +32,21 @@
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
     .number{
     outline:0;
     border: none;
     color: #868686;
-    background-color: none;
+    background-color: #FFFFFF;
     border-radius: 50px;
     width: 80px;
     height:80px;
     float:left;
     font-size:20px;
     padding: 0%;
-    margin: px;
+    margin: 10px;
     }
     
     .number:hover{
@@ -60,21 +60,21 @@
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
     .operator{
     outline:0;
     border: none;
     color: #868686;
-    background-color: none;
+    background-color: #FFFFFF;
     border-radius: 50px;
     width: 80px;
     height:80px;
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
     .operator:hover{
@@ -88,21 +88,21 @@
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
      .operatorE{
     outline:0;
     border: none;
     color: #868686;
-    background-color: none;
+    background-color: #FFFFFF;
     border-radius: 50px;
     width: 80px;
     height:80px;
     float:left;
     font-size:20px;
     padding: 0%;
-    mrdgin:1px;
+    margin:10px;
     }
     
      .operatorE:hover{
@@ -116,7 +116,7 @@
     float:left;
     font-size:20px;
     padding: 0%;
-    margin:1px;
+    margin:10px;
     }
     
     #display{
@@ -126,7 +126,7 @@
     background-color: #171717;
     border-radius: 20px;
     width: 320px;
-    height:400px;
+    height:495px;
     float:left;
     font-size:40px;
     padding-left: 5px;
@@ -173,8 +173,8 @@
         
     <div class="inputRow">
     <input type="button" class="text" value="AC" onClick="calculator.display.value =''">
-    <input type="button" class="text" name="(" value="(" onclick="calculator.display.value+='('">
-    <input type="button" class="text" name=")" value=")" onclick="calculator.display.value+=')'">
+    <input type="button" class="number" name="(" value="(" onclick="calculator.display.value+='('">
+    <input type="button" class="number" name=")" value=")" onclick="calculator.display.value+=')'">
     <input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">
         </div>
     
@@ -203,8 +203,8 @@
     <div class="inputRow">
     <input type="button" class="number" value="0" onclick="calculator.display.value+='0'">
     <input type="button" class="number" value="." onclick="calculator.display.value+='.'">
+    <input type="button" class="operator" value="delete" onclick="calculator.display.value+= 'backspace'">
     <input type="button" class="operatorE" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
-    <input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value+='/'">
     
         
         </div>
@@ -212,7 +212,7 @@
     </div>
     
         
-    </div>
+    
     
 
     </form>
