@@ -108,7 +108,7 @@
     margin:10px;
     }
     
-     .operatorE{
+    .operatorE{
     outline:0;
     border: none;
     color: #868686;
@@ -170,15 +170,29 @@
     margin:auto;
     width: 400px;
     display:inline-block;
+    
         }
         
+    
+   /* #entireCal{
+    margin:auto;
+    width: 400px;
+    display:inline-block;
+    
+        } */   
     
     
     
     </style>
 <title>Caluculator</title>
 
+    
+
 <body>
+    
+<div id="entireCal">
+
+
 <form name="calculator">
     
     
@@ -187,6 +201,7 @@
         </div>
     
     
+ 
     <div id="myCalculator">
     
     
@@ -224,19 +239,23 @@
     <div class="inputRow">
     <input type="button" class="number" value="0" onclick="calculator.display.value+='0'">
     <input type="button" class="number" value="." onclick="calculator.display.value+='.'">
-    <input type="button" class="operator" value="delete" onclick="calculator.display.value+= 'backspace'">
+    <input type="button" class="operator" value="DEL" onclick="calculator.display.value=calculator.display.value.substr(0,calculator.display.value.length-1)">
     <input type="button" class="operatorE" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
     
         
         </div>
     
     </div>
-    
         
+        </div>
+       
+
     
     
 
     </form>
 
+
 </body>
+
 </html>
