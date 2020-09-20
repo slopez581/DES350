@@ -10,6 +10,10 @@
 
     
     <style>
+        
+    body {
+  background-color: #B5B5B5;
+}
     
     
     .text{
@@ -140,24 +144,34 @@
     margin:10px;
     }
     
+    #top_display{
+    outline:0;
+    border: none;
+    color: #7E7E7E;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    width: 350px;
+    height:505px;
+    float:left;
+    padding-left: 5px;
+    margin-right:50px;
+    }
+    
     #display{
     outline:0;
     border: none;
     color: #FFFFFF;
-    background-color: #171717;
+    background-color: #E7E7E7;
     border-radius: 20px;
-    width: 350px;
-    height:495px;
-    float:left;
-    font-size:55px;
+    font-size:100px;
     font-family: 'Roboto', sans-serif;
-    font-weight:700;
-    padding-left: 5px;
-    display:inline-block;
-    margin-left: 50px;
-    margin-right:50px;
-    }
+    font-weight:300;
+    width: 272px;
+    /*width: 278px;*/
+    margin-left: 70px;
+    margin-top: 50px;
     
+    }
     
     .inputRow{
     width:100%;
@@ -174,20 +188,21 @@
     
         }
         
-    
-   /* #entireCal{
+    #entireCal{
     margin:auto;
-    width: 400px;
-    display:inline-block;
+    width: 860px;
+    margin-top: 15%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
     
-        } */   
+    
+    }    
+</style>
     
     
-    
-    </style>
-<title>Caluculator</title>
 
     
+<title>Caluculator</title>   
 
 <body>
     
@@ -201,17 +216,16 @@
     <input type="text" name="display" id="display" disabled>
         </div>
     
-    
  
     <div id="myCalculator">
-    
-    
     
         
     <div class="inputRow">
     <input type="button" class="text" value="AC" onClick="calculator.display.value =''">
-    <input type="button" class="number" name="(" value="(" onclick="calculator.display.value+='('">
-    <input type="button" class="number" name=")" value=")" onclick="calculator.display.value+=')'">
+    <input type="button" class="number" value="(" onclick="calculator.display.value+='('"> 
+    <input type="button" class="number" value=")" onclick="calculator.display.value+=')'">
+    
+        
     <input type="button" class="number" name="divide" value="/" onclick="calculator.display.value+='/'">
         </div>
     
@@ -248,13 +262,9 @@
     
     </div>
         
-    
-
-    
-    
-
     </form>
-         </div>
+         
+    </div>
 
 
 </body>
