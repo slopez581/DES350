@@ -1,0 +1,742 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewpoint" content= "width=device-width, initial-scale=1.0">
+<title>self_portrait</title>
+</head>
+
+<style>
+    body{
+    background-color:#0e5a72;
+    }
+    
+    .wholehead{
+    margin-left:50px;
+    margin-top:165px;
+    }
+    
+    .backhair{
+    margin-top:70px;
+    margin-left:38px;
+    width:595px;
+    height:470px;
+    background: #191212;  
+    position:absolute;
+    border-radius: 50%;
+    z-index:-8;
+    }
+    
+    .ear{
+    margin-top:260px;
+    margin-left:70px;
+    width:100px;
+    height:110px;
+    background: #963c2d;
+    display:inline-block;
+    border-radius: 25%;
+    position:absolute;
+    z-index:-7;
+    }
+    
+    .ear2{
+    margin-top:260px;
+    margin-left:500px;
+    width:100px;
+    height:110px;
+    background: #963c2d;
+    border-radius: 25%;
+    position:absolute;
+    z-index:-7;
+    }
+    
+    .airpodstop{
+    margin-top:290px;
+    margin-left:50px;
+    width:60px;
+    height:60px;
+    background:#fff3eb;
+    border-radius: 50%; 
+    display:inline-block;
+    position:absolute;
+    z-index:-6;
+    }
+    
+    .airpodsbottom{
+    margin-top:305px;
+    margin-left:68px;
+    width:50px;
+    height:80px;
+    background:#fff3eb;
+    border-radius: 20%; 
+    display:inline-block;
+    position:absolute;
+    z-index:-6;    
+    }
+    
+     .airpodstop2{
+    margin-top:280px;
+    margin-left:560px;
+    width:60px;
+    height:60px;
+    background:#fff3eb;
+    border-radius: 50%; 
+    position:absolute;
+    z-index:-6;
+    }
+    
+    .airpodsbottom2{
+    margin-top:300px;
+    margin-left:553px;
+    width:50px;
+    height:80px;
+    background:#fff3eb;
+    border-radius: 20%; 
+    position:absolute;
+    z-index:-6;    
+    }
+    
+    .entireear{
+    position:absolute;
+        
+    animation-name:ear; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    }
+    
+     .face1{
+    margin-top:39px;
+    margin-left:84px;
+    width:500px;
+    height:560px;
+    background: #c48a62;
+    border-radius: 30%;
+    position:absolute;
+    z-index:-5;
+    }
+    
+    .face2{
+    margin-left:84px;
+    margin-top:150px;
+    width: 500px;
+    height: 540px;
+    background: #c48a62;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-5;
+    } 
+    
+    
+    .eyelid{
+    margin-top:250px;
+    margin-left:147px;
+    width:125px;
+    height:140px;
+    background:#ba703e;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-4;
+    }
+    
+    .eyelid2{
+    margin-top:250px;
+    margin-left:400px;
+    width:125px;
+    height:140px;
+    background:#ba703e;
+    border-radius: 50%; 
+    position:absolute;
+    z-index:-4;
+    }
+    
+    .eyelashes{
+    margin-top:289px;
+    margin-left:147px;
+    width:125px;
+    height:100px;
+    background:#191212;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-3;    
+    }
+    
+    .eyelashes2{
+    margin-top:289px;
+    margin-left:400px;
+    width:125px;
+    height:100px;
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-3;    
+    }
+    
+    .eyebag{
+    margin-top:305px;
+    margin-left:147px;
+    width:125px;
+    height:95px;
+    background:#b7583e;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-3;      
+    }
+    
+    .eyebag2{
+    margin-top:305px;
+    margin-left:400px;
+    width:125px;
+    height:95px;
+    background:#b7583e;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-3;     
+    }
+    
+    .eyeball{
+    margin-top:297px;
+    margin-left:147px;
+    width:125px;
+    height:94px;
+    background:#fff3eb;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-3;     
+    }
+    
+    .eyeball2{
+    margin-top:297px;
+    margin-left:400px;
+    width:125px;
+    height:94px;
+    background:#fff3eb;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-3;     
+    }
+    
+    .iris{
+    margin-top:310px;
+    margin-left:180px;
+    width:60px;
+    height:60px;
+    background:#191212;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-3;     
+    }
+    
+    .iris2{
+    margin-top:310px;
+    margin-left:432px;
+    width:60px;
+    height:60px;
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-3;     
+    }
+    
+    .irislight{
+    margin-top:330px;
+    margin-left:226px;
+    width:10px;
+    height:10px;
+    background:#fff6f0;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-1;     
+    }
+    
+    .irislight2{
+    margin-top:330px;
+    margin-left:478px;
+    width:10px;
+    height:10px;
+    background:#fff6f0;
+    border-radius: 50%;
+    display:inline-block;
+    position:absolute;
+    z-index:-1;     
+    }
+    
+    .twinkle{
+    position:absolute;
+        
+    animation-name:twinkle; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite; 
+    }
+    
+    
+    .brow{
+    margin-top:243px;
+    margin-left:120px;
+    width:180px;
+    height:70px;
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2; 
+        
+    animation-name:brow1; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    }
+    
+    .brow2{
+    margin-top:210px;
+    margin-left:370px;
+    width:180px;
+    height:70px;
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2; 
+        
+    animation-name:brow2; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    }
+    
+    .nose{
+    margin-top:386px;
+    margin-left:284px;
+    width:100px;
+    height:100px;
+    background:#8c2e1b;
+    border-radius: 50%;
+    position:absolute;
+    z-index:1; 
+    }
+    
+    .nose2{
+    margin-top:370px;
+    margin-left:284px;
+    width:100px;
+    height:100px;
+    background:#c48a62;
+    border-radius: 50%;
+    position:absolute;
+    z-index:1; 
+    }
+    
+    .nosehigh{
+    margin-top:390px;
+    margin-left:340px;
+    width:20px;
+    height:40px;
+    background:#ffdbc2;
+    border-radius: 50%;
+    position:absolute;
+    z-index:1; 
+    }
+    
+    .mouth{
+    margin-top:500px;
+    margin-left:235px;
+    width:200px;
+    height:50px;
+    background:#8c2e1b;
+    border-radius: 50%;
+    position:absolute;
+    z-index:0;     
+    }
+    
+    .mouth2{
+    margin-top:492px;
+    margin-left:230px;
+    width:210px;
+    height:50px;
+    background:#c48a62;
+    border-radius: 50%;
+    position:absolute;
+    z-index:0;     
+    }
+    
+    
+    .dimple{
+    margin-top:520px;
+    margin-left:230px;
+    width:20px;
+    height:20px;
+    background:#8c2e1b;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1;     
+    }
+    
+    .entiresmile1{
+    position:absolute;
+    margin-left:0px;
+        
+    animation-name:smile2; 
+    animation-duration:5s;
+    animation-delay:2.6s;
+    animation-iteration-count: infinite;    
+        
+    }
+    
+    /*.dimple2{
+    margin-top:31.3%;
+    margin-left:25.2%;
+    width:20px;
+    height:20px;
+    background:#8c2e1b;
+    border-radius: 50%;
+    position:absolute;
+    z-index:1;     
+    }*/
+    
+    .underlip{
+    margin-top:580px;
+    margin-left:310px;
+    width:50px;
+    height:50px;
+    background:#963c2d;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2;     
+    }
+    
+    .underlip2{
+    margin-top:585px;
+    margin-left:303px;
+    width:65px;
+    height:50px;
+    background:#c48a62;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1;     
+    }
+    
+    
+    
+    .upperlip{
+    margin-top:399px;
+    margin-left:200px;
+    width:270px;
+    height:130px;
+    background:#c48a62;
+    border-radius: 10%;
+    position:absolute;
+    z-index:0;      
+    }
+    
+    
+    
+    .mouth3{
+    margin-top:488px;
+    margin-left:215px;
+    width:250px;
+    height:109px;
+    background:#8c251b;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1;      
+    }
+    
+    .darkmouth{
+    margin-top:488px;
+    margin-left:280px;
+    width:150px;
+    height:100px;
+    background:#682825;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1;     
+    }
+    
+    .teeth{
+    margin-top:501px;
+    margin-left:220px;
+    width:240px;
+    height:40px;
+    background:#fff3eb;
+    border-radius: 30%;
+    position:absolute;
+    z-index:-1;       
+    }
+    
+    
+    .mouth6{
+    margin-top:555px;
+    margin-left:288px;
+    width:150px;
+    height:40px;
+    background:#d12e22;
+    transform: rotate(-5deg);
+    border-radius: 50%;
+    position:absolute;
+    z-index:-1;      
+    }
+    
+    .entiresmile2{
+    position:absolute;
+    margin-left:0px;
+        
+    animation-name:smile2; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    }
+    
+    .hair{
+    margin-top:60px;
+    margin-left:-60px;
+    width:330px;
+    height:130px;
+    transform: rotate(-68deg);
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2;     
+    }
+    
+    .hair2{
+    margin-top:-50px;
+    margin-left:150px;
+    width:470px;
+    height:210px;
+    transform: rotate(-165deg);
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2;     
+    }
+    
+    .hair3{
+    margin-top:60px;
+    margin-left:270px;
+    width:355px;
+    height:150px;
+    transform: rotate(-165deg);
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2;     
+    }
+    
+    .hair4{
+    margin-top:-70px;
+    margin-left:240px;
+    width:350px;
+    height:150px;
+    transform: rotate(-163deg);
+    background:#191212;
+    border-radius: 50%;
+    position:absolute;
+    z-index:-2;      
+    }
+    
+    .allhair{
+    position:absolute;
+        
+    animation-name:hair; 
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    }
+    
+    @-webkit-keyframes brow1{
+    0% {top:170px;
+            }  
+    45% {top:170px;
+            }
+    65% {top:120px;
+            }
+    97% {top:120px;
+            }
+    100% {top:170px;
+            }
+     }
+    
+    
+    @-webkit-keyframes brow2{
+    0% {top:170px;
+            }  
+    45% {top:170px;
+            }
+    60% {top:150px;
+            }
+    95% {top:150px;
+            }
+    100% {top:150px;
+            }
+     }
+    
+    @-webkit-keyframes smile1{
+    0% {top:130px;
+            }  
+    40% {top:120px;
+            }
+    60% {top:170px;
+            }
+    75% {top:170px;
+            }
+    90% {top:130px;
+            }
+     }
+    
+    @-webkit-keyframes smile2{
+    0% {top:170px;
+            }  
+    4% {top:100px;
+            }
+    51% {top:100px;
+            }
+    55% {top:165px;
+            }
+    70% {top:165px;
+            }
+     }
+    
+    /*@-webkit-keyframes move5{
+    0% {top:165px;
+            } 
+    /*25% {top:150px;
+            }*/
+    /*50% {top:160px;
+            }*/
+    /*75% {top:165px;
+            }*/
+    /*100% {top:165px;
+            }*/
+     /*}*/
+    
+    
+    @-webkit-keyframes hair{
+    0% {top:160px;
+            }  
+    45% {top:160px;
+            }
+    65% {top:150px;
+            }
+    80% {top:150px;
+            }
+    100% {top:150px;
+            }
+     }
+    
+    @-webkit-keyframes twinkle{
+    0% {left:60px;
+        }    
+    5% {left:60px;
+            } 
+    10% {left:59px;
+            } 
+    }
+    
+    @-webkit-keyframes ear{
+    0% {top:150px;
+            }  
+    35% {top:150px;
+            }
+    80% {top:140px;
+            }
+    90% {top:140px;
+            }
+    100% {top:140px;
+            }
+     }
+    
+    </style>
+    
+<body>
+<div class="wholehead">
+    
+<div class="backhair">
+    </div>   
+<div class="entireear">   
+<div class="ear"></div> 
+<div class="ear2"></div> 
+    
+<div class="airpodstop"></div> 
+<div class="airpodsbottom"></div>
+    
+<div class="airpodstop2"></div> 
+<div class="airpodsbottom2"></div> 
+    </div> 
+    
+    
+<div class="face1">
+    </div>    
+
+<div class="face2">
+    </div>
+    
+
+<div class="fulleye">  
+    
+<div class="eyelid"></div>
+<div class="eyelid2"></div>
+
+<div class="eyelashes"></div>
+<div class="eyelashes2"></div> 
+    
+<div class="eyebag"></div>   
+<div class="eyebag2"></div> 
+
+<div class="eyeball"></div>
+<div class="eyeball2"></div>
+    
+<div class="iris"></div>    
+<div class="iris2"></div>
+
+<div class="twinkle">
+<div class="irislight"></div>
+<div class="irislight2"></div>
+    </div>
+    
+<div class="brow"></div>
+<div class="brow2"></div>
+    
+    </div> 
+    
+<div class="nose"></div>
+<div class="nose2"></div>
+<div class="nosehigh"></div>
+
+
+<div class="entiresmile1">
+<div class="mouth"></div>
+<div class="mouth2"></div> 
+<div class="dimple"></div>   
+<div class="dimple2"></div>       
+    </div>
+
+<div class="underlip"></div>
+<div class="underlip2"></div>
+    
+
+    
+<div class="upperlip"></div>
+    
+<div class="entiresmile2">
+<div class="mouth3"></div>
+<div class="darkmouth"></div>
+<div class="teeth"></div>
+<div class="mouth6"></div>
+    </div>
+
+<div class="allhair">
+<div class="hair"></div>    
+<div class="hair2"></div>  
+<div class="hair3"></div>  
+<div class="hair4"></div>  
+    </div>
+    
+    
+    </div>
+
+</body>
+</html>
