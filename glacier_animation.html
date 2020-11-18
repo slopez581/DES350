@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>glacier_animation</title>
+
+<style>
+body{
+        background-color:#738988;
+        margin:0px;
+        padding:0px;
+    } 
+
+.card{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        width:40%;
+        height:90vh;
+    
+    
+background:url("glacier_montana_poster_final.jpg")no-repeat center;
+
+background-size:contain;
+    }
+    
+    
+.card:hover{
+    
+background:url("glacier_montana_poster_final.gif") no-repeat center;
+
+background-size:contain;
+        }
+    
+    #preload{
+        background:url("glacier_montana_poster_final.gif") no-repeat -9999, -9999;
+    }
+    
+    
+    </style>    
+    
+    
+</head>
+
+<body>
+    
+<div id="preload"></div>   
+
+<div class="card"></div> 
+
+</body>
+</html>
