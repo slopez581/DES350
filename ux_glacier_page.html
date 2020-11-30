@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ux_page_glacier</title>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    
+    background{
+        background-color:#395e60;
+    }
+    
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing:border-box;
+    }   
+    
+    header{
+        width: 100%;
+        height: 500vh;
+        position: relative;
+        overflow:hidden;
+        
+    }
+    
+    header:after{
+        content: '';
+        position: absolute;
+        width:2000px;
+        left:0;
+        top:0;
+        background-color: rgba(0,0,0,0.05);
+        z-index:25;
+        
+    }
+    
+    .sky{
+        position:absolute;
+        width:2000px;
+        left:0;
+        z-index:19;
+    }
+    
+    .mountains{
+        top:500px;
+        position:absolute;
+        width:1700px;
+        left:0;
+        bottom:-100px;
+        z-index:20;
+    }
+    
+    .wolf{
+        position:absolute;
+        width:1700px;
+        left:0;
+        top:1610px;
+        z-index:21;
+    }
+    
+    .glacier{
+        position:absolute;
+        width:1200px;
+        top:300px;
+        z-index:19;
+    }
+
+
+    .foreground{
+        
+        position: absolute;
+        width:1700px;
+        left:0;
+        z-index:23;
+    }
+    
+    .type{
+        top:250px;
+        position: absolute;
+        width:1700px;
+        left:0;
+        margin-left: -10pc;
+        z-index:24;
+    }
+    
+    section{
+        width:1700px;
+        position: relative;
+    }
+    
+    .shadow{
+        position:absolute;
+        bottom: 100px;
+        height:300px;
+        width:1700px;
+        left:0;
+        z-index:20;
+        background-color:linear-gradient(to top, #395e60, transparent);
+    }
+    
+    .visit{
+        top:3050px;
+
+        position: absolute;
+        width:665px;
+        left:5pc;
+        margin-left: 500px;
+        z-index:25;
+    }
+    
+    
+    </style>
+
+    
+    
+    
+<body>
+
+<header>
+   
+<div class="background">    
+    
+
+    <img src="ux_sky.svg" class="sky translate" data-speed="-0.2" alt="">
+    
+    <img src="ux_glacier_type.svg" class="glacier translate"  data-speed="0.2" alt="">
+    
+    <img src="ux_mountains.svg" class="mountains translate" data-speed="-0.25" alt="">
+    
+    <img src="ux_wolf.svg" class="wolf translate"  data-speed="-0.2" alt="">
+    
+    <img src="ux_foreground.svg" class="foreground translate"  data-speed="0.1" alt="">
+    
+    <img src="ux_type.svg" class="type translate"  data-speed="-0.35" alt="">
+
+   <a href="https://www.nps.gov/glac/index.htm"> <img src="ux_visit.svg" class="visit" data-speed="-0.4" alt=""></a>
+    
+    
+    </div>
+</header>
+    
+<section>
+    <div class="shadow"></div>
+      
+    
+    </section>
+<script src="app.js.txt"></script>
+
+
+
+    
+    
+    
+    
+</body>
+</html>
